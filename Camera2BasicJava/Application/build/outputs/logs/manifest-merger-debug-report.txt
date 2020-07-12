@@ -1,0 +1,167 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:18:1-43:12
+MERGED from [com.android.support:support-v13:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-v13-28.0.0.aar\f1af9768531a4bf9f5417342f5bb7fa5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\476f57e36725a2b025a5a9934357ec2d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\c48c67460c319c8631e8fde3f2686540\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\71f0f25baa1f5703437658a86a4bcbfc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\e70c23553f57c84466f3cb2cc7f5453c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\6e4c4c8187c3397b8c7c1c423fc9b32a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\c35d0148aafef00d9de9bac8dd129323\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\da0d3c2d723c9c24f1f4233dbc12d90e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\a0efbb4af3b58d3beb5744bcd19be634\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\cb9099a9f4861d2ca54d09aba4798a2f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6922d056b2657f1d9183678e1d2f04ce\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\ca31dac980e409f22624fb57f2e14d4c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\d2189454722bfd19e47ba6854c59d6fb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\9847375c52c1fb3dc8aec2f7831a6ee7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\fff4bd17b29f3a6a8817768f9c12589c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\23ebdef0b2deb4130faf9444eb4c9c16\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\c9f2b3121c3136d0e1a587b5668f808d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\35d78f06d56347cffbf45f55da0c2c3d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0097e7fc44df1541e74bc4bc01186dd3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0ab2ab4b2862402d6e60d3f640736fb\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\3efcf888546042f19e8b2d6bc8d5eb36\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\63480d7cbae8c44db9d3bbe0166ca284\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\9b7e0def1c206e3339d56efba980d294\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1c178fd2f6b0c26d22ee14e94e5b57a5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\d230b20f14714168da8326df0e70316c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\1daa59875d025d3d6a9370e534dedb14\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\791ddfeb13faa82e22cc3367b0e03aca\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\6f694a833458d578f5ac8870d70ec468\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\064138b7cdda755442ae0b2124697523\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ae5b91537b5aa842d35b86b1d97c5f09\AndroidManifest.xml:17:1-22:12
+	package
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:19:5-47
+	xmlns:android
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:18:11-69
+uses-permission#android.permission.CAMERA
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:21:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:22:5-80
+	android:name
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:22:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:23:22-77
+uses-feature#android.hardware.camera
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:25:5-60
+	android:name
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:25:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:26:5-70
+	android:name
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:26:19-67
+application
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:28:5-41:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0097e7fc44df1541e74bc4bc01186dd3\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0097e7fc44df1541e74bc4bc01186dd3\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0ab2ab4b2862402d6e60d3f640736fb\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0ab2ab4b2862402d6e60d3f640736fb\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0097e7fc44df1541e74bc4bc01186dd3\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:29:9-41
+	android:icon
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:30:9-45
+	android:allowBackup
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:28:18-44
+	android:theme
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:31:9-45
+activity#com.example.android.camera2basic.CameraActivity
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:33:9-40:20
+	android:label
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:34:19-51
+	android:name
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:33:19-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:35:13-39:29
+action#android.intent.action.MAIN
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:37:27-74
+category#android.intent.category.DEFAULT
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:38:17-75
+	android:name
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:38:27-73
+uses-sdk
+INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-v13:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-v13-28.0.0.aar\f1af9768531a4bf9f5417342f5bb7fa5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-v13-28.0.0.aar\f1af9768531a4bf9f5417342f5bb7fa5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\476f57e36725a2b025a5a9934357ec2d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\476f57e36725a2b025a5a9934357ec2d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\c48c67460c319c8631e8fde3f2686540\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\c48c67460c319c8631e8fde3f2686540\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\71f0f25baa1f5703437658a86a4bcbfc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\71f0f25baa1f5703437658a86a4bcbfc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\e70c23553f57c84466f3cb2cc7f5453c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\e70c23553f57c84466f3cb2cc7f5453c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\6e4c4c8187c3397b8c7c1c423fc9b32a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\6e4c4c8187c3397b8c7c1c423fc9b32a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\c35d0148aafef00d9de9bac8dd129323\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\c35d0148aafef00d9de9bac8dd129323\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\da0d3c2d723c9c24f1f4233dbc12d90e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\da0d3c2d723c9c24f1f4233dbc12d90e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\a0efbb4af3b58d3beb5744bcd19be634\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\a0efbb4af3b58d3beb5744bcd19be634\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\cb9099a9f4861d2ca54d09aba4798a2f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\cb9099a9f4861d2ca54d09aba4798a2f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6922d056b2657f1d9183678e1d2f04ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6922d056b2657f1d9183678e1d2f04ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\ca31dac980e409f22624fb57f2e14d4c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\ca31dac980e409f22624fb57f2e14d4c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\d2189454722bfd19e47ba6854c59d6fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\d2189454722bfd19e47ba6854c59d6fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\9847375c52c1fb3dc8aec2f7831a6ee7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\9847375c52c1fb3dc8aec2f7831a6ee7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\fff4bd17b29f3a6a8817768f9c12589c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\fff4bd17b29f3a6a8817768f9c12589c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\23ebdef0b2deb4130faf9444eb4c9c16\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\23ebdef0b2deb4130faf9444eb4c9c16\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\c9f2b3121c3136d0e1a587b5668f808d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\c9f2b3121c3136d0e1a587b5668f808d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\35d78f06d56347cffbf45f55da0c2c3d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\35d78f06d56347cffbf45f55da0c2c3d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0097e7fc44df1541e74bc4bc01186dd3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0097e7fc44df1541e74bc4bc01186dd3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0ab2ab4b2862402d6e60d3f640736fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0ab2ab4b2862402d6e60d3f640736fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\3efcf888546042f19e8b2d6bc8d5eb36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\3efcf888546042f19e8b2d6bc8d5eb36\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\63480d7cbae8c44db9d3bbe0166ca284\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\63480d7cbae8c44db9d3bbe0166ca284\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\9b7e0def1c206e3339d56efba980d294\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\9b7e0def1c206e3339d56efba980d294\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1c178fd2f6b0c26d22ee14e94e5b57a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1c178fd2f6b0c26d22ee14e94e5b57a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\d230b20f14714168da8326df0e70316c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\d230b20f14714168da8326df0e70316c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\1daa59875d025d3d6a9370e534dedb14\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\1daa59875d025d3d6a9370e534dedb14\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\791ddfeb13faa82e22cc3367b0e03aca\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\791ddfeb13faa82e22cc3367b0e03aca\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\6f694a833458d578f5ac8870d70ec468\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\6f694a833458d578f5ac8870d70ec468\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\064138b7cdda755442ae0b2124697523\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\064138b7cdda755442ae0b2124697523\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ae5b91537b5aa842d35b86b1d97c5f09\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ae5b91537b5aa842d35b86b1d97c5f09\AndroidManifest.xml:20:5-44
+INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml
