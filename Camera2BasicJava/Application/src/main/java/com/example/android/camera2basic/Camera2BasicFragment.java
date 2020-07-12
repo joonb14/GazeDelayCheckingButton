@@ -16,6 +16,7 @@
 
 package com.example.android.camera2basic;
 
+import android.Manifest;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
@@ -23,8 +24,6 @@ import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.LayoutInflater;
-import android.view.Surface;
-import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -44,6 +43,13 @@ public class Camera2BasicFragment extends Fragment
      * Conversion from screen rotation to JPEG orientation.
      */
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
+
+    private static final String[] VIDEO_PERMISSIONS = {
+            Manifest.permission.CAMERA,
+            Manifest.permission.RECORD_AUDIO,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.READ_EXTERNAL_STORAGE
+    };
 
 
     /**
@@ -164,4 +170,6 @@ public class Camera2BasicFragment extends Fragment
             e.printStackTrace();
         }
     }
+
+
 }

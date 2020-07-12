@@ -16,11 +16,19 @@
 
 package com.example.android.camera2basic;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.Settings;
+import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,7 +37,12 @@ public class CameraActivity extends AppCompatActivity {
 
     private static int count;
     private static SharedPreferences sf;
-
+    private static final String[] PERMISSIONS = new String[] {
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.READ_EXTERNAL_STORAGE
+    };
+    private static final int REQ_PERMISSION = 1000;
+    private String TAG = "MOBED";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +62,7 @@ public class CameraActivity extends AppCompatActivity {
         }
         sf = getPreferences(Context.MODE_PRIVATE);
         count = sf.getInt("count",0);
+        checkPermission();
 
         setContentView(R.layout.activity_camera);
         if (null == savedInstanceState) {
@@ -92,5 +106,64 @@ public class CameraActivity extends AppCompatActivity {
         editor.commit();
         return count;
     }
+    private void checkPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            // Check permission status
+            if (!hasPermissions(PERMISSIONS)) {
 
+                requestPermissions(PERMISSIONS, REQ_PERMISSION);
+            } else {
+                checkPermission(true);
+            }
+        } else {
+            checkPermission(true);
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    private boolean hasPermissions(String[] permissions) {
+        int result;
+        // Check permission status in string array
+        for (String perms : permissions) {
+            if (perms.equals(Manifest.permission.SYSTEM_ALERT_WINDOW)) {
+                if (!Settings.canDrawOverlays(this)) {
+                    return false;
+                }
+            }
+            result = ContextCompat.checkSelfPermission(this, perms);
+            if (result == PackageManager.PERMISSION_DENIED) {
+                // When if unauthorized permission found
+                return false;
+            }
+        }
+        // When if all permission allowed
+        return true;
+    }
+
+    private void checkPermission(boolean isGranted) {
+        if (isGranted) {
+            //
+        } else {
+            Log.d(TAG, "not granted permissions");
+            finish();
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case REQ_PERMISSION:
+                if (grantResults.length > 0) {
+                    boolean PermissionAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+                    if (PermissionAccepted) {
+                        checkPermission(true);
+                    } else {
+                        checkPermission(false);
+                    }
+                }
+                break;
+        }
+    }
 }
