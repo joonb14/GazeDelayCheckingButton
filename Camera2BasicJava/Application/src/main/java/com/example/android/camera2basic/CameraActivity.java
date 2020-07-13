@@ -20,6 +20,10 @@ import android.Manifest;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -35,12 +39,23 @@ import java.io.IOException;
 
 public class CameraActivity extends AppCompatActivity {
 
+    private SensorManager mSensorManager;
+
+    private Sensor mGyroSensor = null;
+    private Sensor mAccelerometer = null;
     private static int count;
     private static SharedPreferences sf;
     private static final String[] PERMISSIONS = new String[] {
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.READ_EXTERNAL_STORAGE
     };
+    private static double gyroX;
+    private static double gyroY;
+    private static double gyroZ;
+
+    private  static double accX;
+    private  static double accY;
+    private  static double accZ;
     private static final int REQ_PERMISSION = 1000;
     private String TAG = "MOBED";
     @Override
@@ -71,6 +86,10 @@ public class CameraActivity extends AppCompatActivity {
                     .commit();
         }
 
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mGyroSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+
     }
 
     public boolean dir_exists(String dir_path)
@@ -84,10 +103,14 @@ public class CameraActivity extends AppCompatActivity {
 
     public void onResume() {
         super.onResume();
+        mSensorManager.registerListener(gyroListener, mGyroSensor, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager.registerListener(acceleroListener, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     public void onStop() {
         super.onStop();
+        mSensorManager.unregisterListener(gyroListener);
+        mSensorManager.unregisterListener(acceleroListener);
     }
 
     public static int getCount(){
@@ -165,5 +188,33 @@ public class CameraActivity extends AppCompatActivity {
                 }
                 break;
         }
+    }
+    public SensorEventListener gyroListener = new SensorEventListener() {
+        public void onAccuracyChanged(Sensor mGyroSensor, int acc) {
+        }
+
+        public void onSensorChanged(SensorEvent event) {
+            gyroX = event.values[0];
+            gyroY = event.values[1];
+            gyroZ = event.values[2];
+            //SLog.d("MOBED","Gyro: "+gyroX+ " "+gyroY+" "+gyroZ+"rad/s");
+        }
+    };
+    public SensorEventListener acceleroListener = new SensorEventListener() {
+        public void onAccuracyChanged(Sensor mGyroSensor, int acc) {
+        }
+
+        public void onSensorChanged(SensorEvent event) {
+            accX = event.values[0];
+            accY = event.values[1];
+            accZ = event.values[2];
+            //Log.d("MOBED","Accelerometer: "+accX+ " "+accY+" "+accZ+"m/s^2");
+        }
+    };
+    public static String getGyroData(){
+        return gyroX+ ","+gyroY+","+gyroZ;
+    }
+    public static String getAcceleroData(){
+        return accX+ ","+accY+","+accZ;
     }
 }

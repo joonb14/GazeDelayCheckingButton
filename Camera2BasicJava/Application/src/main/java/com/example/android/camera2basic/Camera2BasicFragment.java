@@ -111,7 +111,7 @@ public class Camera2BasicFragment extends Fragment
                 leftmargin = params.leftMargin + button_size/2;
                 topmargin = params.topMargin + button_size/2;
                 Log.d(TAG, leftmargin+","+topmargin);
-                appendLog("1,"+System.currentTimeMillis()+","+leftmargin+","+topmargin);
+                appendLog("1,"+System.currentTimeMillis()+","+leftmargin+","+topmargin+","+CameraActivity.getGyroData()+","+CameraActivity.getAcceleroData());
                 CameraActivity.getCount();
                 CameraActivity.addCount();
                 String count = "Count: "+CameraActivity.getCount();
@@ -130,7 +130,7 @@ public class Camera2BasicFragment extends Fragment
                         myBtn.setLayoutParams(params);
                         topmargin+=button_size/2;
                         leftmargin+=button_size/2;
-                        appendLog("0,"+System.currentTimeMillis()+","+leftmargin+","+topmargin);
+                        appendLog("0,"+System.currentTimeMillis()+","+leftmargin+","+topmargin+","+CameraActivity.getGyroData()+","+CameraActivity.getAcceleroData());
 
                     }
                 }, 1000);
@@ -146,7 +146,7 @@ public class Camera2BasicFragment extends Fragment
             {
                 logFile.createNewFile();
                 BufferedWriter buf = new BufferedWriter(new FileWriter(logFile, true));
-                buf.append("Category(0:button set 1:button pressed), time, X, Y");
+                buf.append("Category(0:button set 1:button pressed),time,gazeX,gazeY,gyroX,gyroY,gyroZ,accelX,accelY,accelZ");
                 buf.newLine();
                 buf.close();
             }
