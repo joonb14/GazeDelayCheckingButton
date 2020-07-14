@@ -602,6 +602,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable ic_action_info
 drawable ic_launcher
+drawable mobed_icon
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
