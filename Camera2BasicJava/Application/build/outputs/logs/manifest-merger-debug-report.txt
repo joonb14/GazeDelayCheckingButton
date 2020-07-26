@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:18:1-42:12
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:18:1-43:12
 MERGED from [com.android.support:support-v13:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-v13-28.0.0.aar\f1af9768531a4bf9f5417342f5bb7fa5\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\476f57e36725a2b025a5a9934357ec2d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\c48c67460c319c8631e8fde3f2686540\AndroidManifest.xml:17:1-22:12
@@ -52,7 +52,7 @@ ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Appli
 	android:name
 		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:25:19-67
 application
-ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:27:5-40:19
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:27:5-41:19
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0097e7fc44df1541e74bc4bc01186dd3\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0097e7fc44df1541e74bc4bc01186dd3\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\joonb\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0ab2ab4b2862402d6e60d3f640736fb\AndroidManifest.xml:22:5-23:19
@@ -68,25 +68,27 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\joonb\.gra
 	android:theme
 		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:30:9-45
 activity#com.example.android.camera2basic.CameraActivity
-ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:32:9-39:20
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:32:9-40:20
+	android:screenOrientation
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:34:19-55
 	android:label
 		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:33:19-58
 	android:name
 		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:32:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:34:13-38:29
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:35:17-69
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:35:25-66
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:36:17-77
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:36:27-74
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:37:27-74
 category#android.intent.category.DEFAULT
-ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:37:17-75
+ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:38:17-75
 	android:name
-		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:37:27-73
+		ADDED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml:38:27-73
 uses-sdk
 INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Android Apps\github\GazeDelayCheckingButton\Camera2BasicJava\Application\src\main\AndroidManifest.xml

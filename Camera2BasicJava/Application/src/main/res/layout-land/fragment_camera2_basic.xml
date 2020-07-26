@@ -15,42 +15,25 @@
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.example.android.camera2basic.AutoFitTextureView
-        android:id="@+id/texture"
+    <Button
+        style="@style/MyButton"
+        android:id="@+id/MyButton"
+        android:layout_marginLeft="53px"
+        android:layout_marginTop="100px"
+        android:layout_width="224px"
+        android:layout_height="224px"
+        android:clickable = "true"/>
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
-
-    <FrameLayout
-        android:id="@+id/control"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:background="@color/control_background"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/picture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/picture" />
-
-        <ImageButton
-            android:id="@+id/info"
-            style="@android:style/Widget.Material.Light.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:contentDescription="@string/description_info"
-            android:padding="20dp"
-            android:src="@drawable/ic_action_info" />
-
-
-    </FrameLayout>
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="1000px"
+        android:text="Count: 0" />
 
 </RelativeLayout>

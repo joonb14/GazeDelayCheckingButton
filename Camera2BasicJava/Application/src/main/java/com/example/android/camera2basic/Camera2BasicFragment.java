@@ -79,7 +79,13 @@ public class Camera2BasicFragment extends Fragment
 
     @Override
     public void onViewCreated(final View view, Bundle savedInstanceState) {
-        view.findViewById(R.id.MyButton).setOnClickListener(this);
+        try {
+            view.findViewById(R.id.MyButton).setOnClickListener(this);
+        }
+        catch (NullPointerException e) {
+            Log.e(TAG, "Attempt to invoke virtual method 'void android.view.View.setOnClickListener(android.view.View$OnClickListener)' on a null object reference");
+            e.printStackTrace();
+        }
         textView = view.findViewById(R.id.textView);
     }
 
@@ -100,41 +106,47 @@ public class Camera2BasicFragment extends Fragment
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.MyButton: {
-                myBtn = (Button) view.findViewById(R.id.MyButton);
-//                myBtn.setClickable(false);
-                params = (RelativeLayout.LayoutParams)myBtn.getLayoutParams();
-                final int button_size = 224;
-                final int left_margin = 53;
-                final int top_margin = 136;
-                leftmargin = params.leftMargin + button_size/2;
-                topmargin = params.topMargin + button_size/2;
-                Log.d(TAG, leftmargin+","+topmargin);
-                appendLog("1,"+System.currentTimeMillis()+","+leftmargin+","+topmargin+","+CameraActivity.getGyroData()+","+CameraActivity.getAcceleroData());
-                CameraActivity.getCount();
-                CameraActivity.addCount();
-                String count = "Count: "+CameraActivity.getCount();
-                textView.setText(count);
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                long seed = System.currentTimeMillis();
-                Random rand = new Random(seed);
-                    public void run() {
-                        int row =rand.nextInt(7)+1; //1~7
-                        int col =rand.nextInt(5)+1; //1~4
-                        int topmargin = 100+(row-1)*top_margin+button_size*(row-1);
-                        int leftmargin = col*left_margin+button_size*(col-1);
-                        params.topMargin = topmargin;
-                        params.leftMargin = leftmargin;
-                        myBtn.setLayoutParams(params);
-                        topmargin+=button_size/2;
-                        leftmargin+=button_size/2;
-                        appendLog("0,"+System.currentTimeMillis()+","+leftmargin+","+topmargin+","+CameraActivity.getGyroData()+","+CameraActivity.getAcceleroData());
-
-                    }
-                }, 1000);
+        try {
+            switch (view.getId()) {
+                case R.id.MyButton: {
+                    myBtn = (Button) view.findViewById(R.id.MyButton);
+    //                myBtn.setClickable(false);
+                    params = (RelativeLayout.LayoutParams)myBtn.getLayoutParams();
+                    final int button_size = 224;
+                    final int left_margin = 53;
+                    final int top_margin = 136;
+                    leftmargin = params.leftMargin + button_size/2;
+                    topmargin = params.topMargin + button_size/2;
+                    appendLog("1,"+System.currentTimeMillis()+","+leftmargin+","+topmargin+","+CameraActivity.getOrientation()+","+CameraActivity.getGyroData()+","+CameraActivity.getAcceleroData());
+                    Log.d(TAG, "1,"+CameraActivity.getOrientation());
+                    CameraActivity.getCount();
+                    CameraActivity.addCount();
+                    String count = "Count: "+CameraActivity.getCount();
+                    textView.setText(count);
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                    long seed = System.currentTimeMillis();
+                    Random rand = new Random(seed);
+                        public void run() {
+                            int row =rand.nextInt(7)+1; //1~7
+                            int col =rand.nextInt(5)+1; //1~4
+                            int topmargin = 100+(row-1)*top_margin+button_size*(row-1);
+                            int leftmargin = col*left_margin+button_size*(col-1);
+                            params.topMargin = topmargin;
+                            params.leftMargin = leftmargin;
+                            myBtn.setLayoutParams(params);
+                            topmargin+=button_size/2;
+                            leftmargin+=button_size/2;
+                            appendLog("0,"+System.currentTimeMillis()+","+leftmargin+","+topmargin+","+CameraActivity.getOrientation()+","+CameraActivity.getGyroData()+","+CameraActivity.getAcceleroData());
+                            Log.d(TAG, "0,"+CameraActivity.getOrientation());
+                        }
+                    }, 1000);
+                }
             }
+        }
+        catch (NullPointerException e) {
+            Log.e(TAG, "Attempt to invoke virtual method 'void android.view.View.setOnClickListener(android.view.View$OnClickListener)' on a null object reference");
+            e.printStackTrace();
         }
     }
     public void appendLog(String text)
@@ -146,7 +158,7 @@ public class Camera2BasicFragment extends Fragment
             {
                 logFile.createNewFile();
                 BufferedWriter buf = new BufferedWriter(new FileWriter(logFile, true));
-                buf.append("Category(0:button set 1:button pressed),time,gazeX,gazeY,gyroX,gyroY,gyroZ,accelX,accelY,accelZ");
+                buf.append("Category(0:button set 1:button pressed),time,gazeX,gazeY,pitch,roll,gyroX,gyroY,gyroZ,accelX,accelY,accelZ");
                 buf.newLine();
                 buf.close();
             }

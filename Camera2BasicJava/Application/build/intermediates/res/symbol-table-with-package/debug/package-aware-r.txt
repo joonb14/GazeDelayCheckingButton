@@ -666,7 +666,6 @@ id collapseActionView
 id container
 id content
 id contentPanel
-id control
 id custom
 id customPanel
 id decor_content_parent
@@ -706,7 +705,6 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id parentPanel
-id picture
 id progress_circular
 id progress_horizontal
 id radio
@@ -750,7 +748,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
-id texture
 id time
 id title
 id titleDividerNoCustom
