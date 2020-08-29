@@ -128,8 +128,9 @@ public class Camera2BasicFragment extends Fragment
                     long seed = System.currentTimeMillis();
                     Random rand = new Random(seed);
                         public void run() {
-                            int row =rand.nextInt(7)+1; //1~7
-                            int col =rand.nextInt(5)+1; //1~4
+                            int num = rand.nextInt(35);
+                            int row =num / 5 + 1; //1~7
+                            int col =num % 5 + 1; //1~4
                             int topmargin = 100+(row-1)*top_margin+button_size*(row-1);
                             int leftmargin = col*left_margin+button_size*(col-1);
                             params.topMargin = topmargin;
